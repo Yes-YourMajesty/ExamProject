@@ -4,7 +4,7 @@ public interface Creature {
 
     void showStatus();
 
-    void attack(Character target);
+    void attack(Creature target);
 
     String getName();
 
