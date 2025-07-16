@@ -10,8 +10,7 @@ public class Hero extends Character{
     }
 
     Hero(String name,int hp,String weapon){
-        this.setName(name);
-        this.setHp(hp);
+        super(name, hp);
         this.setWeapon(weapon);
     }
 

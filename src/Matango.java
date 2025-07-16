@@ -1,11 +1,10 @@
-public class Matango extends  Monster{
+public class Matango extends Monster{
 
     Matango(char suffix,int hp,String name){
-        this.setSuffix(suffix);
-        this.setHp(hp);
+        super(name, hp, suffix);
         this.setName(name);
-    }
 
+    }
 
     @Override
     public void attack(Creature target) {

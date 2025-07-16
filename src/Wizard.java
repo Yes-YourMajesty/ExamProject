@@ -9,9 +9,9 @@ public class Wizard extends Character{
     void setMp(int mp) {
         this.mp = mp;
     }
+
     Wizard(String name,int hp,int mp){
-        this.setName(name);
-        this.setHp(hp);
+        super(name,hp);
         this.setMp(mp);
     }
 

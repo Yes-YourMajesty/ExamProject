@@ -1,8 +1,7 @@
 public final class Slime extends  Monster{
 
     Slime(char suffix,int hp,String name){
-        this.setSuffix(suffix);
-        this.setHp(hp);
+        super(name, hp, suffix);
         this.setName(name);
     }
 

@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class GameMaster {
     public static void main(String[] args) {
         Hero h = new Hero("勇者",100,"剣");
-        Wizard w = new Wizard("魔法使い",60,80);
+        Wizard w = new Wizard("魔法使い",60,20);
         Thief t = new Thief("盗賊",70);
 
         ArrayList<Character> party = new ArrayList<Character>();
@@ -47,6 +47,7 @@ public class GameMaster {
 
         System.out.println("\nダメージを受けた勇者が突然光りだした！");
         SuperHero sh = new SuperHero(h);
+        party.set(0,sh);
         for(Monster i : monsters) {
             sh.attack(i);
         }
@@ -58,7 +59,7 @@ public class GameMaster {
             if (i.isAlive()){
                 System.out.println("生存状況:生存");
             }else {
-                System.out.println("生存状況:死亡");
+                System.out.println("生存状況:戦闘不能");
             }
         }
 

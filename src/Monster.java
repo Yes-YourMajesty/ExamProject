@@ -6,20 +6,20 @@ public abstract class Monster implements Creature{
 
 
 
+    public Monster(String name, int hp, char suffix) {
+        if (hp < 0) {
+            throw new IllegalArgumentException("初期設定に誤りがあるため、キャラクターを作成できませんでした");
+        }
+        this.setName(name);
+        this.setHp(hp);
+        this.setSuffix(suffix);
+    }
+
     public String getName() {
         return this.name;
     }
 
-    public void setName(String name) {// 妥当性チェック
-        if (name == null) {
-            throw new IllegalArgumentException("名前がnullである。処理を中断。");
-        }
-        if (name.length() <= 1) {
-            throw new IllegalArgumentException("名前が短すぎる。処理を中断。");
-        }
-        if (name.length() >= 8) {
-            throw new IllegalArgumentException("名前が長すぎる。処理を中断。");
-        }
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -28,6 +28,9 @@ public abstract class Monster implements Creature{
     }
 
     public void setHp(int hp) {
+        if (hp < 0) {
+        hp = 0;
+        }
         this.hp = hp;
     }
 

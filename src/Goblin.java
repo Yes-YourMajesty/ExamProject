@@ -1,8 +1,7 @@
 public class Goblin extends Monster{
 
     Goblin(char suffix,int hp,String name){
-        this.setSuffix(suffix);
-        this.setHp(hp);
+        super(name, hp, suffix);
         this.setName(name);
     }
 
