@@ -11,9 +11,9 @@ public class GameMaster {
         party.add(w);
         party.add(t);
 
-        Goblin g1 = new Goblin('A',50,"ゴブリン");
-        Matango m1 = new Matango('A',45,"お化けキノコ");
-        Slime s1 = new Slime('A',40,"スライム");
+        Goblin g1 = new Goblin('A',50);
+        Matango m1 = new Matango('A',45);
+        Slime s1 = new Slime('A',40);
 
         ArrayList<Monster> monsters = new ArrayList<Monster>();
         monsters.add(m1);

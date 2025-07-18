@@ -1,9 +1,7 @@
 public class Matango extends Monster{
 
-    Matango(char suffix,int hp,String name){
-        super(name, hp, suffix);
-        this.setName(name);
-
+    Matango(char suffix,int hp){
+        super("お化けキノコ", hp, suffix);
     }
 
     @Override

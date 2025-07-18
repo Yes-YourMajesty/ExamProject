@@ -1,8 +1,7 @@
 public final class Slime extends  Monster{
 
-    Slime(char suffix,int hp,String name){
-        super(name, hp, suffix);
-        this.setName(name);
+    Slime(char suffix,int hp){
+        super("スライム", hp, suffix);
     }
 
     @Override
